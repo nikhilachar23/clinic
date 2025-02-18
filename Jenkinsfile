@@ -1,10 +1,10 @@
 pipeline {
-    agent { label 'slave3' }
+    agent { label 'slave2' }
     stages {
         stage('Checkout') {
             steps {
                 sh "rm -rf clinic"
-                sh "git clone https://github.com/poojagowda-j/clinic.git"
+                sh "git clone https://github.com/nikhilachar23/clinic.git"
                 sh "cd clinic"
             }
         }
