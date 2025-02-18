@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                sh "rm -rf clinic-1"
+                sh "rm -rf clinic"
                 sh "git clone https://github.com/poojagowda-j/clinic.git"
                 sh "cd clinic"
             }
