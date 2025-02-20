@@ -8,7 +8,7 @@ pipeline {
                // sh "rm -rf clinic"
                // sh "git clone https://github.com/nikhilachar23/clinic.git"
                // sh "cd clinic"
-                checkoutcode(feature1)
+                checkoutcode()
             }
         }
         stage('Set up Environment') {
