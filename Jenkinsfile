@@ -1,11 +1,14 @@
+@Library('java_pipeline_groovy@main') _
+
 pipeline {
     agent { label 'slave2' }
     stages {
         stage('Checkout') {
             steps {
-                sh "rm -rf clinic"
-                sh "git clone https://github.com/nikhilachar23/clinic.git"
-                sh "cd clinic"
+               // sh "rm -rf clinic"
+               // sh "git clone https://github.com/nikhilachar23/clinic.git"
+               // sh "cd clinic"
+                checkoutcode()
             }
         }
         stage('Set up Environment') {
